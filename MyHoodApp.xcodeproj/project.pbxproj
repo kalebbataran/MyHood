@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		367AF8731CBDEA3F0061EAE5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AF8721CBDEA3F0061EAE5 /* Post.swift */; };
+		367AF8761CBDF3000061EAE5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AF8751CBDF3000061EAE5 /* PostCell.swift */; };
+		367AF8791CBDFE370061EAE5 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AF8781CBDFE370061EAE5 /* AddPostVC.swift */; };
+		367AF87B1CBE02690061EAE5 /* circularImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AF87A1CBE02690061EAE5 /* circularImg.swift */; };
+		367AF87D1CBE87290061EAE5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AF87C1CBE87290061EAE5 /* DataService.swift */; };
 		36D71BE11CB339040063CDE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D71BE01CB339040063CDE8 /* AppDelegate.swift */; };
 		36D71BE31CB339040063CDE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D71BE21CB339040063CDE8 /* ViewController.swift */; };
 		36D71BE61CB339040063CDE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D71BE41CB339040063CDE8 /* Main.storyboard */; };
@@ -34,9 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		367AF8721CBDEA3F0061EAE5 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		367AF8751CBDF3000061EAE5 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		367AF8781CBDFE370061EAE5 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		367AF87A1CBE02690061EAE5 /* circularImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = circularImg.swift; sourceTree = "<group>"; };
+		367AF87C1CBE87290061EAE5 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = ../DataService.swift; sourceTree = "<group>"; };
 		36D71BDD1CB339040063CDE8 /* MyHoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D71BE01CB339040063CDE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36D71BE21CB339040063CDE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36D71BE21CB339040063CDE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = MyHoodApp/ViewController.swift; sourceTree = "<group>"; };
 		36D71BE51CB339040063CDE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36D71BE71CB339040063CDE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36D71BEA1CB339040063CDE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +84,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		367AF8711CBDE9A70061EAE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				367AF8721CBDEA3F0061EAE5 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		367AF8741CBDF2C50061EAE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36D71BE91CB339040063CDE8 /* LaunchScreen.storyboard */,
+				36D71BE41CB339040063CDE8 /* Main.storyboard */,
+				367AF87A1CBE02690061EAE5 /* circularImg.swift */,
+				367AF8751CBDF3000061EAE5 /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		367AF8771CBDFDBE0061EAE5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				36D71BE21CB339040063CDE8 /* ViewController.swift */,
+				367AF8781CBDFE370061EAE5 /* AddPostVC.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		367AF87E1CBE87330061EAE5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				367AF87C1CBE87290061EAE5 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		36D71BD41CB339040063CDE8 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +144,12 @@
 		36D71BDF1CB339040063CDE8 /* MyHoodApp */ = {
 			isa = PBXGroup;
 			children = (
-				36D71BE01CB339040063CDE8 /* AppDelegate.swift */,
-				36D71BE21CB339040063CDE8 /* ViewController.swift */,
-				36D71BE41CB339040063CDE8 /* Main.storyboard */,
+				367AF87E1CBE87330061EAE5 /* Services */,
+				367AF8711CBDE9A70061EAE5 /* Model */,
+				367AF8741CBDF2C50061EAE5 /* View */,
+				367AF8771CBDFDBE0061EAE5 /* Controller */,
 				36D71BE71CB339040063CDE8 /* Assets.xcassets */,
-				36D71BE91CB339040063CDE8 /* LaunchScreen.storyboard */,
+				36D71BE01CB339040063CDE8 /* AppDelegate.swift */,
 				36D71BEC1CB339040063CDE8 /* Info.plist */,
 			);
 			path = MyHoodApp;
@@ -259,8 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367AF8731CBDEA3F0061EAE5 /* Post.swift in Sources */,
+				367AF87D1CBE87290061EAE5 /* DataService.swift in Sources */,
 				36D71BE31CB339040063CDE8 /* ViewController.swift in Sources */,
+				367AF8791CBDFE370061EAE5 /* AddPostVC.swift in Sources */,
 				36D71BE11CB339040063CDE8 /* AppDelegate.swift in Sources */,
+				367AF87B1CBE02690061EAE5 /* circularImg.swift in Sources */,
+				367AF8761CBDF3000061EAE5 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +540,7 @@
 				36D71C071CB339040063CDE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36D71C081CB339040063CDE8 /* Build configuration list for PBXNativeTarget "MyHoodAppTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +549,7 @@
 				36D71C0A1CB339040063CDE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36D71C0B1CB339040063CDE8 /* Build configuration list for PBXNativeTarget "MyHoodAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +558,7 @@
 				36D71C0D1CB339040063CDE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
